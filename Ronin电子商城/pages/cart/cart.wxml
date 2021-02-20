@@ -1,0 +1,25 @@
+<!-- 头部 -->
+<view class="header">
+  <button class="all" bindtap="handleCheckAll">全选</button>
+  <view class="title">购物车</view>
+  <button class="handle {{flag === 0 ? 'remove' : ''}}" bindtap="handleGoods">{{handle[flag]}}</button>
+</view>
+<!-- 商品列表 -->
+<view class="goods">
+  <block wx:for="{{cartList}}" wx:key="id">
+  <view class="item">
+    <radio data-id = "{{index}}" checked = "{{checked[index]}}" data-checked = "{{checked[index]}}" bindtap="handleRadio"></radio>
+    <image src="{{item.pic}}"></image>
+    <view class="money">{{item.minPrice}}元</view>
+    <view class="btn" bindtap="add" data-id = "{{index}}">+</view>
+    <view>{{num[index]}}</view>
+    <view class="btn" bindtap="remove" data-id = "{{index}}">-</view>
+  </view>
+  </block>
+</view>
+<!-- 底部 -->
+<view class="footer">
+  <view class="result">总支付：{{money}}元</view>
+  <button class="payment" bindtap="payment">结算</button>
+</view>
+

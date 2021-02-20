@@ -1,0 +1,47 @@
+/* pages/zhifu/zhifu.wxss */
+.goods{
+  padding: 2vw;
+  border: 2rpx solid #ccc;
+  font-size: 0;
+  box-sizing: border-box;
+}
+.goods .item{
+  height: 15vh;
+  line-height: 15vh;
+  border: 2rpx solid #ccc;
+}
+.goods .item view{
+  display: inline-block;
+  width: 10vw;
+  height: 100%;
+  font-size: 32rpx;
+  text-align: center;
+  vertical-align: middle;
+}
+.goods .item image{
+  width: 16vh;
+  height: 90%;
+  vertical-align: middle;
+}
+.goods .item .radio{
+  width: 8vw;
+  height: 8vw;
+}
+.goods .item view.money{
+  width: 25vw;
+  color: #f40;
+  text-align-last: left;
+  text-indent: 1em;
+}
+.go{
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+  color: #1296db;
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: center;
+  line-height: 10vh;
+  background-color: #0f1123;
+}

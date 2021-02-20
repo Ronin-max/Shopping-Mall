@@ -1,0 +1,32 @@
+<!--pages/goodsMsg/goodsMsg.wxml-->
+<!-- 头部 -->
+<view class="header">
+  商品详情
+</view>
+<!-- 图片 -->
+<view class="img">
+  <image src="{{goods.pic}}"></image>
+</view>
+<!-- 基本信息 -->
+<view class="price">
+  <view>
+    <text>原价：{{goods.originalPrice}}元</text>
+    <text>现售：{{goods.minPrice}}元</text>
+  </view>
+  <view>库存：{{goods.stores}}+</view>
+  <view class="goodsName">{{goods.name}}</view>
+</view>
+<!-- 商品介绍 -->
+<view class="jieshao">
+  <view class="title">详细介绍</view>
+  <block wx:for="{{msgList}}" wx:key="id">
+    <image src="{{item}}"></image>
+  </block>
+</view>
+<!-- 加入购物车按钮 -->
+<view class="cart">
+  <view class="push" bindtap="pushCart">加入购物车</view>
+</view>
+
+
+

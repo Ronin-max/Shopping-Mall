@@ -1,0 +1,37 @@
+<!--pages/user/user.wxml-->
+<view class="header">个人中心</view>
+<!-- 头像 -->
+<view class="user">
+  <view class="icon">
+  <open-data type = "userAvatarUrl" lang = "zh_CN"></open-data>
+</view>
+<!-- 个人信息 -->
+<view class="msg">
+  <!-- 昵称 -->
+  <view>
+    <text>昵称：</text>
+    <open-data type = "userNickName" lang = "zh_CN"></open-data>
+  </view>
+  <!-- 性别 -->
+  <view>
+    <text>性别：</text>
+    <open-data type = "userGender" lang = "zh_CN"></open-data>
+  </view>
+  <!-- 国家 -->
+  <view>
+    <text>国家：</text>
+    <open-data type = "userCountry" lang = "zh_CN"></open-data>
+  </view>
+</view>
+</view>
+<!-- 联系电话 -->
+<view class="phone">
+  <text>联系电话：</text>
+  <input class="{{phoneAct ? 'active' : ''}}" type="text" value="{{phone}}" bindblur="changePhone" bindfocus="phoneActive"/>
+</view>
+<!-- 收货地址 -->
+<view class="address">
+  <view class="title">收货地址：</view>
+  <textarea class="{{addAct ? 'active' : ''}}" value="{{address}}" bindblur="changeAdd" bindfocus="addActive"></textarea>
+</view>
+

@@ -1,0 +1,9 @@
+<!-- 导入商品模块 -->
+<import src="/templates/goods.wxml"/>
+<!--pages/search/search.wxml-->
+<view class="header">查询结果</view>
+<view class="recommend">
+  <block wx:for="{{showList}}" wx:key="id">
+    <template is="goods" data="{{...item}}"></template>
+  </block>
+</view>

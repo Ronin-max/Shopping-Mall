@@ -1,0 +1,98 @@
+/* pages/user/user.wxss */
+.header{
+  height: 10vh;
+  line-height: 10vh;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40rpx;
+  color: #1296db;
+  background-color: #0f1123;
+}
+/* 用户信息 */
+.user{
+  height: 34vw;
+  margin-top: 1vw;
+  border: 4rpx solid #ccc;
+  padding: 3vw;
+  background-color: #0f1123;
+  box-sizing: border-box;
+}
+.user .icon{
+  display: inline-block;
+  width: 28vw;
+  height: 28vw;
+  padding-right: 4vw;
+  border-right: 4rpx solid #ccc;
+  vertical-align: text-top;
+}
+.user .msg{
+  display: inline-block;
+  width: 28vw;
+  height: 28vw;
+  margin-left: 3vw;
+  vertical-align: text-top;
+}
+.user .msg text{
+  font-weight: bold;
+  color: #1f88c0;
+}
+.user .msg open-data{
+  color: #7a7a7a;
+}
+.user .msg view{
+  margin-bottom: 4vw;
+}
+/* 联系电话 */
+.phone{
+  position: relative;
+  height: 6vh;
+  line-height: 6vh;
+  padding-left: 5vw;
+  margin-top: 1vw;
+  background-color: #0f1123;
+}
+.phone text:nth-child(1){
+  color: #1f88c0;
+  font-weight: bold;
+}
+.phone input{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 200rpx;
+  width: 50vw;
+  height: 5vh;
+  border-radius: 8rpx;
+  color: #7a7a7a;
+  z-index: 100;
+  box-sizing: border-box;
+}
+.phone input.active{
+  border: 4rpx solid #da6a6a;
+}
+/* 地址 */
+.address{
+  position: relative;
+  height: 30vh;
+  margin-top: 1vw;
+  padding: 5vw;
+  background-color: #0f1123;
+}
+.address .title{
+  font-weight: bold;
+  color: #1f88c0;
+  margin-bottom: 2vw;
+}
+.address textarea{
+  position: absolute;
+  top: 100rpx;
+  width: 90vw;
+  height: 25vh;
+  border-radius: 8rpx;
+  color: #7a7a7a;
+  z-index: 100;
+  box-sizing: border-box;
+}
+.address textarea.active{
+  border: 4rpx solid #da6a6a;
+}

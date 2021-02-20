@@ -1,0 +1,41 @@
+<!-- 导入商品模块 -->
+<import src="/templates/goods.wxml"/>
+<!--index.wxml-->
+<!-- 商品查询 -->
+<view class="header">
+  <input bindblur="changeValue" value="{{inputValue}}" placeholder="里面什么都有哦!" placeholder-style="color:#ccc;font-size:28rpx;" class="search"/>
+  <view bindtap="toSearch" class="searchBtn"><image src="/icons/search.png"></image></view>
+</view>
+<!-- 轮播图 -->
+<view class="swiper">
+  <swiper indicator-dots = "true" autoplay="true" indicator-active-color="#1296db" easing-function="linear">
+    <swiper-item>
+      <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3803069617,2085647389&fm=26&gp=0.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3803069617,2085647389&fm=26&gp=0.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3803069617,2085647389&fm=26&gp=0.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3803069617,2085647389&fm=26&gp=0.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 热门分类 -->
+<view class="hotSort">
+  <block wx:for="{{goodsType}}" wx:key="id">
+    <view bindtap="changeGoods" data-typeid = "{{ item.id }}" data-name = "{{item.name}}">
+      <image src="{{item.icon}}"></image>
+      <view>{{item.name}}</view>
+    </view>
+  </block>
+</view>
+<!-- 商品推荐 -->
+<view class="recommendTitle">{{recommendTitle}}</view>
+<view class="recommend">
+  <block wx:for="{{showList}}" wx:key="id">
+    <template is="goods" data="{{...item}}"></template>
+  </block>
+</view>

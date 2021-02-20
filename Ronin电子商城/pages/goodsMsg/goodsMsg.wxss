@@ -1,0 +1,95 @@
+/* pages/goodsMsg/goodsMsg.wxss */
+.header{
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 40rpx;
+  text-align: center;
+  color: #1296db;
+  font-weight: bold;
+  background-color: #0f1123;
+}
+.img{
+  width: 100vw;
+  height: 35vh;
+}
+.img image{
+  width: 100%;
+  height: 100%;
+}
+/* 售价 */
+.price{
+  min-height: 15vh;
+  padding: 0 5vw;
+  color: #1296db;
+  background-color: #0f1123;
+}
+.price view:nth-child(1) text{
+  display: inline-block;
+  width: 40vw;
+  height: 5vh;
+  line-height: 5vh;
+}
+.price view:nth-child(2){
+  width: 40vw;
+  height: 5vh;
+  line-height: 5vh;
+}
+.price view:nth-child(3){
+  border-top: 4rpx solid #1296db;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+.jieshao{
+  margin-top: 2vh;
+}
+.jieshao .title{
+  height: 6vh;
+  line-height: 6vh;
+  font-weight: bold;
+  text-align: center;
+  color: #1296db;
+  background-color: #0f1123;
+}
+.jieshao image{
+  width: 100%;
+}
+
+/* 底部 */
+.cart{
+  position: fixed;
+  width: 100vw;
+  height: 8vh;
+  line-height: 8vh;
+  padding-left: 5vw;
+  padding-top: 3vw;
+  border-top: 4rpx solid #1296db;
+  font-size: 0;
+  color: #fff;
+  bottom: 0;
+  background-color: #0f1123;
+}
+/* .cart>view{
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+  line-height: 10vw;
+  text-align: center;
+  font-size: 32rpx;
+}
+.cart .add,.cart .remove{
+  font-size: 40rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+} */
+.cart .push{
+  display: inline-block;
+  width: 50vw;
+  height: 10vw;
+  line-height: 10vw;
+  margin-left: 20vw;
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  background-color: #1296db;
+}

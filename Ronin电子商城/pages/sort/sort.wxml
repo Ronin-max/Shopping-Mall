@@ -1,0 +1,18 @@
+<!--pages/sort/sort.wxml-->
+<import src="/templates/menu.wxml"></import>
+<import src="/templates/goods.wxml"></import>
+<!-- header -->
+<view class="header">商品分类</view>
+<!-- 左侧边栏菜单 -->
+<view class="leftMenu" >
+  <block wx:for="{{goodsType}}" wx:key="id">
+    <!-- 电子竞技、办公、简约、颜值 -->
+    <template is="menu" data="{{...item}}"></template>
+  </block>
+</view>
+<!-- 右侧内容区 -->
+<view class="content">
+  <block wx:for="{{showList}}" wx:key="id">
+    <template is="goods" data="{{...item}}"></template>
+  </block>
+</view>

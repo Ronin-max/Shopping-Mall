@@ -1,0 +1,14 @@
+<!--pages/zhifu/zhifu.wxml-->
+<view class="goods">
+  <block wx:for="{{cartList}}" wx:key="id">
+  <view class="item">
+    <radio data-id = "{{index}}" checked = "true" data-checked = "{{checked[index]}}" bindtap="handleRadio"></radio>
+    <image src="{{item.pic}}"></image>
+    <view class="money">{{item.minPrice}}元</view>
+    <view>{{num[index]}}件</view>
+  </view>
+  </block>
+</view>
+  <view class="go">
+    支付金额：{{money}}元
+  </view>

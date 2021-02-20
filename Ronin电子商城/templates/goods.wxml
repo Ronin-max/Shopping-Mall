@@ -1,0 +1,11 @@
+<template name="goods">
+  <view class="goods" bindtap="toGoods" data-id = "{{id}}">
+    <image src="{{ pic }}"></image>
+    <view>
+      <view>{{name}}</view>
+      <view>售价：{{minPrice}}元</view>
+      <view>原价：{{originalPrice}}元</view>
+      <view>库存：{{stores}}</view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/cart/cart",
+    "pages/sort/sort",
+    "pages/goodsMsg/goodsMsg",
+    "pages/search/search",
+    "pages/zhifu/zhifu"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Ronin电子商城",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#03506f"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./icons/index-2.png",
+        "selectedIconPath": "./icons/index-1.png"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "分类",
+        "iconPath": "./icons/sort-2.png",
+        "selectedIconPath": "./icons/sort-1.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "./icons/cart-2.png",
+        "selectedIconPath": "./icons/cart-1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "./icons/user-2.png",
+        "selectedIconPath": "./icons/user-1.png"
+      }
+    ],
+    "selectedColor": "#1296db",
+    "backgroundColor": "#0f1123",
+    "color": "#f6f5f5"
+  }
+}

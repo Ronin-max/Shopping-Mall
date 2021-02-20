@@ -1,0 +1,103 @@
+/* pages/cart/cart.wxss */
+/* header */
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 8vh;
+  line-height: 8vh;
+  padding: 0 2vw;
+  box-sizing: border-box;
+  background-color: #0f1123;
+}
+.header .all,.header .handle{
+  width: 20vw;
+  height: 6vh;
+  line-height: 6vh;
+  padding: 0;
+  margin: auto 0;
+  font-weight: 400;
+  color: #fff;
+  background-color: #1296db;
+}
+.header .title{
+  text-align: center;
+  font-weight: bold;
+  color: #1296db;
+  font-size: 36rpx;
+}
+.header .handle.remove{
+  background-color: #ff7171;
+}
+/* goods */
+.goods{
+  padding: 2vw;
+  border: 2rpx solid #ccc;
+  font-size: 0;
+  box-sizing: border-box;
+}
+.goods .item{
+  height: 15vh;
+  line-height: 15vh;
+  border: 2rpx solid #ccc;
+}
+.goods .item view{
+  display: inline-block;
+  width: 10vw;
+  height: 100%;
+  font-size: 32rpx;
+  text-align: center;
+  vertical-align: middle;
+}
+.goods .item image{
+  width: 16vh;
+  height: 90%;
+  vertical-align: middle;
+}
+.goods .item .radio{
+  width: 8vw;
+  height: 8vw;
+}
+.goods .item view.btn{
+  height: 50%;
+  line-height: 7.5vh;
+  border: 2rpx solid #ccc;
+  border-radius: 20rpx;
+  font-size: 40rpx;
+  color: #ff4343;
+}
+.goods .item view.money{
+  width: 25vw;
+  color: #f40;
+  text-align-last: left;
+  text-indent: 1em;
+}
+/* 底部 */
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+  border-bottom: 4rpx solid #ccc;
+  color: #fff;
+  background-color: #0f1123;
+}
+.footer .result{
+  display: inline-block;
+  width: 50vw;
+  height: 100%;
+  line-height: 10vh;
+}
+.footer .payment{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5vw;
+  width: 30vw;
+  height: 70%;
+  line-height: 7vh;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-color: #1296db;
+}

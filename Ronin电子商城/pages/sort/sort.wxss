@@ -1,0 +1,87 @@
+/* pages/sort/sort.wxss */
+.header{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+  font-weight: bold;
+  color: #1296db;
+  background-color: #0f1123;
+  z-index: 1000;
+}
+.leftMenu{
+  position: fixed;
+  top: 8vh;
+  height: 100vh;
+  width: 20vw;
+  border-right: 4rpx solid #ccc;
+}
+.leftMenu .icon{
+  position: relative;
+  width: 100%;
+  height: 20vw;
+  /* border-top: 8rpx solid #1296db; */
+  border-top: transparent;
+  border-left: transparent;
+  border-bottom: transparent;
+  box-sizing: border-box;
+  padding: 2vw;
+}
+.leftMenu .icon image{
+  width: 100%;
+  height: 100%;
+}
+.leftMenu .icon.active{
+  border-top: 4rpx solid #ccc;
+  border-left: 4rpx solid #ccc;
+  border-bottom: 4rpx solid #ccc;
+}
+.leftMenu .icon.active::after{
+  content: "";
+  position: absolute;
+  width: 4rpx;
+  height: 100%;
+  top: 0rpx;
+  right: -4rpx;
+  background-color: #fff;
+}
+
+.content{
+  position: absolute;
+  top: 8vh;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  padding: 0 2vw;
+  box-sizing: border-box;
+}
+.content .goods{
+  width: 100%;
+  height: 60vw;
+  padding-bottom: 5vw;
+  margin-bottom: 5vw;
+  border-bottom: 4rpx solid #ccc;
+  text-align: center;
+}
+.content .goods view>view:nth-child(1){
+  white-space: nowrap;
+  text-align: left;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .goods view>view:nth-child(2){
+  text-align: left;
+}
+.content .goods view>view:nth-child(3){
+  text-align: left;
+}
+.content .goods view>view:nth-child(4){
+  text-align: left;
+}
+.content .goods image{
+  width: 90%;
+  height: 60%;
+}

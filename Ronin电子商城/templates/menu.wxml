@@ -1,0 +1,5 @@
+<template name="menu">
+  <view class="icon {{isSelect ? 'active' : ''}}" bindtap="handleMenu" data-id = "{{key}}">
+    <image src="{{ icon }}"></image>
+  </view>
+</template>
